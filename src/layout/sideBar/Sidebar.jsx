@@ -1,39 +1,51 @@
-import React from "react";
+import logo from "../../Assets/logo.png";
+
 import { IoHomeOutline } from "react-icons/io5";
+import { GoArrowUpRight } from "react-icons/go";
+import { GrNotes } from "react-icons/gr";
+import { FiUser } from "react-icons/fi";
+import { IoIosSend } from "react-icons/io";
+import { LiaBookSolid } from "react-icons/lia";
+import { IoMdMailOpen } from "react-icons/io";
+import { CgNotes } from "react-icons/cg";
+import { FaChessPawn } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className="fixed left-0 top-0 h-screen bg-black text-white w-10">
-      <div>logo</div>
-      <div className="flex flex-col gap-8 pt-10 items-center">
-        <span>
+    <div className="fixed left-0 top-0 h-screen bg-[#171B2F] text-white w-10">
+      <div className="flex justify-center items-center pt-3">
+        <img src={logo} alt="logo" className="w-8" />
+      </div>
+      <div className="flex flex-col gap-8 pt-10 items-center pb-10">
+        <span className="cursor-pointer text-gray-400">
           <IoHomeOutline />
         </span>{" "}
         <span className="border-l w-full flex items-center justify-center ">
-          <IoHomeOutline />
+          <GoArrowUpRight fontSize="1.3em" className="rounded bg-[#252c59]" />
         </span>{" "}
-        <span>
-          <IoHomeOutline />
+        <span className="cursor-pointer text-gray-400">
+          <GrNotes />
         </span>{" "}
-        <span>
-          <IoHomeOutline />
+        <span className="cursor-pointer text-gray-400">
+          <FiUser />
         </span>
       </div>
-      <div className="flex flex-col gap-8 pt-16 items-center">
-        <span>
-          <IoHomeOutline />
+      <hr className="" />
+      <div className="flex flex-col gap-8 pt-10 items-center">
+        <span className="cursor-pointer text-gray-400">
+          <CgNotes />
         </span>{" "}
-        <span>
-          <IoHomeOutline />
+        <span className="cursor-pointer text-gray-400">
+          <FaChessPawn />
         </span>{" "}
-        <span>
-          <IoHomeOutline />
+        <span className="cursor-pointer text-gray-400">
+          <IoIosSend />
         </span>{" "}
-        <span>
-          <IoHomeOutline />
+        <span className="cursor-pointer text-gray-400">
+          <IoMdMailOpen />
         </span>{" "}
-        <span>
-          <IoHomeOutline />
+        <span className="cursor-pointer text-gray-400">
+          <LiaBookSolid />
         </span>
       </div>
     </div>

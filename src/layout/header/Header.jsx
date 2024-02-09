@@ -7,7 +7,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div className="bg-[#080E29] w-screen flex flex-col items-center gap-3 pb-3 px-4 pl-14">
+    <div className="bg-[#080E29] flex flex-col items-center gap-3 pb-3 px-4">
       <div className="bg-[#D4AC0D] flex gap-3 text-sm items-center justify-center w-fit px-6 py-1 rounded-b-lg cursor-pointer">
         <p>Go Back to ONBOARDING</p>
         <FaExternalLinkAlt />
