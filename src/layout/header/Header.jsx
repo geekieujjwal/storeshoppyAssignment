@@ -8,18 +8,21 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 const Header = () => {
   return (
     <div className="bg-[#080E29] flex flex-col items-center gap-3 pb-3 pr-4 pl-12">
-      <div className="bg-[#D4AC0D] flex gap-3 text-sm items-center justify-center w-fit px-6 py-1 rounded-b-lg cursor-pointer">
+      <a
+        href="/"
+        className="bg-[#D4AC0D] flex gap-3 text-[10px] items-center justify-center w-fit px-6 py-1 rounded-b-lg cursor-pointer"
+      >
         <p>Go Back to ONBOARDING</p>
         <FaExternalLinkAlt />
-      </div>
-      <div className="flex w-full justify-between text-[#C0BCB5]">
+      </a>
+      <div className="flex w-full justify-between text-[#C0BCB5] max-[835px]:flex-wrap max-[835px]:justify-center max-[835px]:gap-4">
         <div className="flex gap-5 items-center">
           <div className="flex items-center gap-2">
-            <GoArrowUpRight fontSize="1.5em" className="rounded bg-[#252c59]" />
-            <span className="text-2xl">Payouts</span>
+            <GoArrowUpRight fontSize="1.3em" className="rounded bg-[#252c59]" />
+            <span className="text-lg">Payouts</span>
           </div>
           <p className="text-xl">/</p>
-          <div className="flex gap-7 items-center ">
+          <div className="flex gap-7 items-center text-sm max-[480px]:flex-wrap">
             <a
               href="#"
               className="font-semibold bg-[#0C1A3E] text-[#3D6FD0] px-2 py-2 rounded-lg cursor-pointer"
@@ -41,13 +44,13 @@ const Header = () => {
           </div>
         </div>
         <div className="flex items-center gap-7">
-          <div className="flex items-center relative">
+          <div className="flex items-center relative text-sm">
             <TiPlus color="#4A82D2" className="absolute left-3 top-3" />
             <select className="text-[#4A82D2] bg-[#080E29] border-[1px] border-[#4A82D2] pr-6 pl-6 py-2 rounded-sm font-bold outline-none">
               <option value="payout">PAYOUT</option>
               <option value="deposit">DEPOSIT</option>
             </select>
-            <span className="absolute right-6 top-0 font-thin text-3xl text-[#333c72]">
+            <span className="absolute right-6 top-0 font-thin text-2xl text-[#333c72]">
               |
             </span>
           </div>

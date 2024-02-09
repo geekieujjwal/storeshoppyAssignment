@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <Sidebar />
       <Header />
       <ContactUs />
-      <main className=" pl-10 text-sm">{children}</main>
+      <main className="pl-10">{children}</main>
     </div>
   );
 };

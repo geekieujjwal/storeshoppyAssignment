@@ -13,38 +13,41 @@ import { FaChessPawn } from "react-icons/fa";
 const Sidebar = () => {
   return (
     <div className="fixed left-0 top-0 h-screen bg-[#171B2F] text-white w-10">
-      <div className="flex justify-center items-center pt-3">
+      <a
+        href="/"
+        className="flex justify-center items-center pt-3 cursor-pointer"
+      >
         <img src={logo} alt="logo" className="w-8" />
-      </div>
+      </a>
       <div className="flex flex-col gap-8 pt-10 items-center pb-10">
-        <span className="cursor-pointer text-gray-400">
+        <span className="cursor-pointer text-gray-400 hover:text-white">
           <IoHomeOutline />
-        </span>{" "}
+        </span>
         <span className="border-l w-full flex items-center justify-center ">
           <GoArrowUpRight fontSize="1.3em" className="rounded bg-[#252c59]" />
-        </span>{" "}
-        <span className="cursor-pointer text-gray-400">
+        </span>
+        <span className="cursor-pointer text-gray-400 hover:text-white">
           <GrNotes />
-        </span>{" "}
-        <span className="cursor-pointer text-gray-400">
+        </span>
+        <span className="cursor-pointer text-gray-400 hover:text-white">
           <FiUser />
         </span>
       </div>
-      <hr className="" />
+      <hr className="w-full border-[0.1px] border-gray-400/20" />
       <div className="flex flex-col gap-8 pt-10 items-center">
-        <span className="cursor-pointer text-gray-400">
+        <span className="cursor-pointer text-gray-400 hover:text-white">
           <CgNotes />
-        </span>{" "}
-        <span className="cursor-pointer text-gray-400">
+        </span>
+        <span className="cursor-pointer text-gray-400 hover:text-white">
           <FaChessPawn />
-        </span>{" "}
-        <span className="cursor-pointer text-gray-400">
+        </span>
+        <span className="cursor-pointer text-gray-400 hover:text-white">
           <IoIosSend />
-        </span>{" "}
-        <span className="cursor-pointer text-gray-400">
+        </span>
+        <span className="cursor-pointer text-gray-400 hover:text-white">
           <IoMdMailOpen />
-        </span>{" "}
-        <span className="cursor-pointer text-gray-400">
+        </span>
+        <span className="cursor-pointer text-gray-400 hover:text-white">
           <LiaBookSolid />
         </span>
       </div>

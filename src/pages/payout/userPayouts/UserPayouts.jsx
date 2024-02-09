@@ -10,8 +10,6 @@ const Payout = () => {
 
   return (
     <div>
-      {/* User Payouts */}
-
       <div className="relative overflow-x-auto">
         <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <thead className="text-xs">
@@ -40,7 +38,7 @@ const Payout = () => {
           <tbody>
             {arrOfData.map(
               ({ createdAt, amount, status, contact, createdBy, utr }, i) => (
-                <tr className="" key={i}>
+                <tr className="text-[12px]" key={i}>
                   <th
                     scope="row"
                     className="px-6 py-4 text-white/80 font-normal"
@@ -67,8 +65,8 @@ const Payout = () => {
         </table>
       </div>
       <hr />
-      <div className="flex gap-3 justify-end px-6 text-[#C0BCB5] mt-3">
-        <select className="bg-[#080E29]/70 py-1 pl-2 pr-4 border-b-[1px] border-b-gray-600">
+      <div className="flex gap-3 justify-end items-center px-6 text-[#C0BCB5] mt-3">
+        <select className="bg-[#080E29]/70 py-1 pl-2 pr-4 border-b-[1px] border-b-gray-600 outline-none">
           <option value="">10</option>
           <option value="">9</option>
           <option value="">8</option>

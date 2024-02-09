@@ -10,8 +10,8 @@ const QuickFilters = () => {
   };
 
   return (
-    <div className="flex justify-between items-center p-4 bg-[#111739]">
-      <div className="flex gap-4 text-[#C0BCB5] items-center">
+    <div className="flex justify-between items-center p-4 bg-[#111739] text-sm max-[835px]:flex-wrap max-[835px]:justify-center max-[835px]:gap-4 max-[540px]:text-[10px]">
+      <div className="flex gap-4 text-[#C0BCB5] items-center max-[460px]:flex-wrap max-[460px]:justify-center">
         <span>Quick Filters :</span>
         <label
           htmlFor="p1"
@@ -27,9 +27,13 @@ const QuickFilters = () => {
             checked={selectedRadio === "p1"}
             onChange={handleRadioChange}
           />
-          <div className="absolute top-1/2 translate-y-[-50%]  left-0  h-3 border-l-2 border-l-orange-400"></div>
+          <div
+            className={`absolute top-1/2  translate-y-[-50%] left-0 h-3 border-l-2  ${
+              selectedRadio === "p1" ? "border-l-white" : "border-l-orange-400"
+            }`}
+          ></div>
           {selectedRadio === "p1" ? (
-            <FaCheckCircle color="#2A86F1" />
+            <FaCheckCircle color="#2A86F1" className="bg-white rounded-full" />
           ) : (
             <FaRegCircle />
           )}
@@ -49,13 +53,17 @@ const QuickFilters = () => {
             checked={selectedRadio === "p2"}
             onChange={handleRadioChange}
           />
-          <div className="absolute top-1/2 translate-y-[-50%]  left-0  h-3 border-l-2 border-l-orange-400"></div>
+          <div
+            className={`absolute top-1/2  translate-y-[-50%] left-0 h-3 border-l-2  ${
+              selectedRadio === "p2" ? "border-l-white" : "border-l-orange-400"
+            }`}
+          ></div>
           {selectedRadio === "p2" ? (
-            <FaCheckCircle color="#2A86F1" />
+            <FaCheckCircle color="#2A86F1" className="bg-white rounded-full" />
           ) : (
             <FaRegCircle />
           )}
-          <span> All Payouts</span>
+          <span>Scheduled for next 2 days</span>
         </label>{" "}
         <label
           htmlFor="p3"
@@ -72,16 +80,17 @@ const QuickFilters = () => {
             onChange={handleRadioChange}
           />
           <div
-            className="absolute top-1/2 translate-y-[-50%]  left-0  h-3 border-l-2 border-l-orange-400  
-       
-       "
+            className={`absolute top-1/2  translate-y-[-50%] left-0 h-3 border-l-2  ${
+              selectedRadio === "p3" ? "border-l-white" : "border-l-orange-400"
+            }`}
           ></div>
           {selectedRadio === "p3" ? (
-            <FaCheckCircle color="#2A86F1" />
+            <FaCheckCircle color="#2A86F1" className="bg-white rounded-full" />
           ) : (
             <FaRegCircle />
           )}
-          <span> All Payouts</span>
+          <span>Queued (RazorpayXA/c)</span>
+          <span className="text-white"> 1</span>
         </label>
       </div>
       <div>

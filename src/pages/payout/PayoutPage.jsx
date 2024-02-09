@@ -5,7 +5,7 @@ import UserPayouts from "./userPayouts";
 
 const PayoutPage = () => {
   return (
-    <div className="bg-[#1D2345] h-screen">
+    <div className="bg-[#1D2345] h-screen max-[511px]:h-fit">
       <QuickFilters />
       <AlertNotification />
       <PayoutFilter />

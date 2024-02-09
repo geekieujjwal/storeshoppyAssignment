@@ -6,7 +6,7 @@ import { TiPlus } from "react-icons/ti";
 
 const PayoutFilter = () => {
   return (
-    <section className="text-[12px] flex justify-between text-[#C0BCB5] px-6">
+    <section className="text-[12px] flex justify-between text-[#C0BCB5] px-6 max-[780px]:flex-wrap max-[780px]:justify-center">
       <div className="flex gap-3 py-5">
         <div className="flex gap-2">
           <input type="checkbox" id="payouts" />
@@ -16,7 +16,7 @@ const PayoutFilter = () => {
           <input type="radio" id="sortBy" />
           <label htmlFor="sortBy" className="flex gap-1">
             <span>Sort by</span>
-            <select className="text-[#4795d9] bg-[#1D2345]">
+            <select className="text-[#4795d9] bg-[#1D2345] outline-none">
               <option value="latestCreationDate">latest creation date</option>
               <option value="newest additions">newest addtions</option>
             </select>
@@ -32,11 +32,11 @@ const PayoutFilter = () => {
         />
         <div className="flex gap-1 items-center border-[1px] border-[#4795d9] rounded text-[#4795d9] px-3 py-1 cursor-pointer">
           <FiDownload fontSize="1.5em" />
-          <span className="text-[16px]">Export</span>
+          <span className="text-[16px] max-[500px]:text-[10px]">Export</span>
         </div>
         <div className="flex items-center relative">
           <TiPlus color="white" className="absolute left-3 top-3" />
-          <select className="text-white bg-[#2A86F2] border-[1px] border-[#4A82D2] px-6 py-2 rounded-sm font-bold outline-none">
+          <select className="text-white bg-[#2A86F2] border-[1px] border-[#4A82D2] px-6 py-2 rounded-sm font-bold outline-none max-[500px]:text-[10px]">
             <option value="payout">PAYOUT</option>
             <option value="deposit">DEPOSIT</option>
           </select>
